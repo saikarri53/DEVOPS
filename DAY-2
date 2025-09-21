@@ -1,0 +1,9 @@
+SOFTWARE DEVELOPMENT LIFECYCLE(SDLC):
+->It is a standard that is followed in software industry for Design,Develop and Test a high quality product.
+workflow:
+      Planning-->Defining-->Designing-->Building-->Testing-->Deploy
+As a devops engineer we have to main focous on:
+Buliding(dev):Developing
+Testing(Quality engineer):Code given by dev gets tested by QE and given for deployment
+Deployment:Promote the application into the production server.
+As a devops engineer he have to fasten up these process by doing the automation of these three.
