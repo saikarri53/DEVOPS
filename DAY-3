@@ -1,0 +1,73 @@
+Roles in a comapany
+
+->Business Analyst=>Who ineract with the costumer and get the requirements He write BRD document(A BRD, or Business Requirements Document, is created by the Business Analyst after talking to stakeholders.
+It includes the project objective, business requirements, scope, key stakeholders, business workflows, assumptions, and acceptance criteria)
+___________________________________________________________________________________________________________________________
+->Product manager=>
+           "The Product Manager defines the product vision and strategy – what problems the product will solve and why.
+The Product Owner translates that vision into actionable tasks for the development team, manages the product backlog, prioritizes features, and works closely with the Scrum team to deliver value each sprint.
+
+In short, the PM is focused on business outcomes, while the PO is focused on team execution."
+->Product owner=>Takes requrements from PM and breaks down into the actionable item(UI,DB,FRONEND.........) also called as epics
+____________________________________________________________________________________________________________________________
+
+->Software Architect=>Provides the LLD(low level design) and  HLD(High level design) implentation for the developers.
+
+->Developers=>What they do:
+
+Take the LLD & requirements and write the actual code.
+
+Perform unit testing to make sure their code works.
+
+Fix bugs, push code to repo, and collaborate with QA/DevOps.
+
+Goal: Turn business requirements + design into a working product.
+
+->QE Engineers=>What they do:
+
+Create test cases from requirements (manual + automation).
+
+Test the product: functional, regression, performance, security.
+
+Report bugs to developers and verify fixes.
+
+Goal: Ensure the final product is bug-free and meets acceptance criteria.
+
+->DBA=>What they do:
+
+Design and maintain databases (schema, indexing, performance tuning).
+
+Take backups, manage security, ensure data availability.
+
+Optimize queries, troubleshoot database issues.
+
+Goal: Make sure data is safe, fast, and available 24/7.
+SCRUM TEAM---->Includes Devops eng,qe,dba they work together to complete the requirement.
+->DevOps Engineers
+
+->Release Managers(optional)=>What they do:
+
+Plan, schedule, and manage software releases (new features, patches, hotfixes).
+
+Coordinate between developers, QA, DevOps, and business teams to ensure smooth rollouts.
+
+Maintain release calendar, rollback plans, and version control.
+
+Goal: Make sure releases go live on time, with minimal risk, and zero chaos.
+->SRE=>
+Ensures uptime,performance,and realibility post-release
+->Technical Writers=>What they do:
+
+Create clear documentation for developers, testers, and end users.
+
+Write API docs, user manuals, knowledge base articles.
+
+Make sure complex systems are easy to understand.
+
+Goal: Provide the single source of truth for how the system works and how to use it
+
+--------------------------------------------------------------------------------X-----------------------------------------------------
+JIRA - Project Management tool-->
+You can see where your project is heading,Who’s doing what,And what needs immediate attention to reach your “launch” on time.
+
+
