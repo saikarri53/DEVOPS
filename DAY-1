@@ -1,0 +1,23 @@
+1)What is Devops?
+ANS:Devops is a culture that improve the oraganization ability to deliver the applications. 
+Devops is a process of improving the application  delivery by ensuring the proper automation,quality,continuous monitering and testing.
+2)Why devops?
+ANS:To improve the process of delivery of the application
+3)How to introduce yourself?
+ANS:
+Who you are – Name + background.
+What you know – Your DevOps skills (show them you’re not just a buzzword collector).
+What you want – Your goal (internship/job/project contribution).
+(Hi, I’m Harsha. I’m currently a student with a strong focus on DevOps and Cloud technologies.
+I’ve worked on hands-on projects where I built automated CI/CD pipelines using Git, Maven, Jenkins, Docker, and Ansible, and deployed containerized applications. 
+I also have a solid foundation in Linux, Python scripting, Kubernetes, and Terraform, which helps me understand infrastructure automation.
+Right now, I’m looking for opportunities where I can apply these skills, contribute to real-world deployments, and learn from industry experts while improving system reliability and automation)
+4)What are your day to day activites as a devops engineer?
+ANS:As a DevOps engineer, my day typically starts with checking the health of our CI/CD pipelines and production systems. If there are any failed builds or alerts, I troubleshoot and fix them first to keep everything running smoothly.
+I spend a good part of my day improving automation — for example, enhancing Jenkins pipelines, optimizing Docker images, and writing scripts to remove manual steps.
+
+I also work on infrastructure provisioning using tools like Terraform and configuration management with Ansible to ensure our environments are consistent across dev, staging, and production.
+
+Monitoring is another key activity — I use tools like Grafana and ELK Stack to track application health and performance, and respond quickly to incidents if something goes down.
+
+Finally, I collaborate with developers and QA teams to make deployments faster and more reliable, and document everything so the team can reproduce results easily."
