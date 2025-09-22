@@ -1,0 +1,24 @@
+-->As a devops engineer we always focous on the improving the efficiency so that they choose the automation
+-->Here we have to write a script then it make the api call and it will receives the request and it will give the responce
+
+SCRIPT:script can be of the multiple types
+      1)AWS CLI
+      2)AWS API(boto-3)
+               {
+                import boto3
+               # Connect to EC2
+               ec2 = boto3.client('ec2', region_name='ap-south-1')
+
+              # Launch 1 EC2 instance
+               response = ec2.run_instances(
+               ImageId='ami-12345678',  # Amazon Machine Image (OS template)
+               InstanceType='t2.micro',
+               MinCount=1,
+               MaxCount=1
+              )
+              print(response['Instances'][0]['InstanceId'])
+                }
+    3)AWS CFT(Cloud formation template)
+    4)Terraform
+    5)AWS CDK(Cloud Development Kit)
+-->Key pair is allows you to login into youe ec2 instance
