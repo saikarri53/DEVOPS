@@ -1,0 +1,12 @@
+1)WHAT IS A SERVER?
+Ans:
+
+Hypervisor:It is a software that  will install application in your or on physical server with this we can do the logical isolation for each server having the own cpu and 
+own ram
+
+-->Like a 1 acre of land is wasted if it is used by a single person instead of that we divide into plots and give rent that plot and increase the efficiency if the resources
+by giving rent
+
+-->This is how virtual machines will work instead of givng the entire server to the one user they have to give to hypervisor it will divide into the vm and give access
+to the million of users
+-->We that we are increasing the automation
