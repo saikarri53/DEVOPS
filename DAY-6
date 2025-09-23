@@ -13,3 +13,4 @@ OS:it will acts as a interface betweeen the software(user) and hardware(cpu,ram,
 Shell scripting:
 ->In linux we are talking with the os by shell commands
 ->The list of shell commands is called shell scripting
+==>IQ:what is the that is used to manage your cpu location-->using top command.
