@@ -1,0 +1,15 @@
+Linux and shell scripting:
+OS:it will acts as a interface betweeen the software(user) and hardware(cpu,ram,i/o).
+-->LINUX VS WINDOWS
+-->Os contains kernal(Heart of os),sys lib,compilers,user processers,system softwares
+     ->Kernal is mainly responsiable for thr four things
+         =>Device management
+         =>Memory management
+         =>process management
+         =>System calls
+
+    ->sys lib are mainly responsiable for the performing the task given by the user
+
+Shell scripting:
+->In linux we are talking with the os by shell commands
+->The list of shell commands is called shell scripting
