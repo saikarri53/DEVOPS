@@ -1,0 +1,45 @@
+1)Write a simple shell script to list all processes?
+Ans:ps -ef | awk -F " " '{print $2}' #her $2 is the col number  #Here ps -ef is to list all the processes
+
+2)Write a script to print only errors from a remote log?
+Ans:curl google.com | grep content_name
+
+3)How will you debug the shell script?
+Ans:for any script if you add in first 'set -x' then it will be in debugging mode
+
+4)What is the crontab in Linux? Can you provide an example of usage?
+Ans:“Crontab is a configuration file that defines scheduled jobs for the cron daemon in Linux. It lets you run scripts or commands automatically at specific times — for example, every minute, every day, or on certain weekdays.
+Each line in the crontab uses five time fields — minute, hour, day of month, month, and day of week — followed by the command to execute.”
+
+“If I want to run a backup script every day at 5 PM, I’d add this line:
+0 17 * * * /home/harsha/backup.sh
+This means ‘minute 0, hour 17, every day, every month, every weekday.’
+The cron daemon will then execute the script daily at 5 PM without manual intervention.”
+
+5)How to open a read-only file?
+Ans: vim -r abc.txt
+
+6)Difference b/w soft and hard link?
+Ans:if you have a file you want,instead of cp command
+Hard link: Another name for the same file data (shares same inode). File survives even if original is deleted.
+Soft link: A shortcut that points to the file path. Breaks if the original file is deleted.(if main damages ref file gets damages).
+# Original file
+echo "Hello" > file.txt
+
+# Hard link
+ln file.txt hardlink.txt  
+
+# Soft link
+ln -s file.txt softlink.txt
+
+
+7)dis of shell scripting?
+Ans:“Shell scripting is great for automating small tasks, but it has some disadvantages — slower execution for big jobs,
+weaker error handling, security concerns if not written properly, and portability issues across shells and systems. 
+For larger, more complex automation, I’d usually prefer a higher-level language like Python.
+
+8)Explain about a network troubleshooting utility?
+Ans:traceroute
+
+9)How will you sort list of namess in a file?
+Ans:use sort command
