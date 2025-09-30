@@ -43,3 +43,77 @@ Ans:traceroute
 
 9)How will you sort list of namess in a file?
 Ans:use sort command
+
+10)What is the use of the top command?
+Ans:top displays real-time system information like CPU, memory usage, and running processes. It’s like the task manager for Linux
+
+11)Diff b/w process and the thread?
+Ans:A process is an independent program with its own memory, while threads are smaller execution units within a process that share memory.
+Threads are lightweight; processes are heavier.
+
+12)What is the use of the files /etc/passwd and /etc/shadow in Linux?
+Ans:/etc/passwd holds user account info (username, UID, home dir, shell), while /etc/shadow stores encrypted passwords and password policies.
+Shadow is root-only for security.
+
+13)What’s the difference between the cron and at commands in Linux?
+Ans:
+cron:
+Used to schedule recurring tasks (daily, weekly, monthly).
+Works with crontab files.
+Example: Backup every day at 2 AM:
+        0 2 * * * /home/harsha/backup.sh
+at
+Used to schedule a one-time task at a specific time.
+Example: Run a script at 5 PM today:
+echo "/home/harsha/script.sh" | at 17:00
+
+14)You created a shell script but when you run it, it says:
+Permission denied Wht you do now?
+Ans:Permission denied usually means the script lacks execute permission. I’d fix it with chmod +x script.sh
+
+15)What is the difference between soft limits and hard limits in Linux? How do you check or change them?
+Ans:
+Soft Limit
+The maximum resource a user/process can use under normal conditions.
+Can be increased up to the hard limit by the user.
+Example: Maximum number of open files for a user: 1024 (soft limit).
+
+Hard Limit
+The maximum value the soft limit can reach.
+Only root can increase the hard limit.
+Example: Max open files: 4096 (hard limit).
+
+16)Explain process states in Linux (e.g., running, sleeping, zombie) and how to identify them.
+Ans:Processes can be Running (R), Sleeping (S), Stopped (T), or Zombie (Z). ps aux or top shows their states
+ ps aux       # shows all processes and their state
+ top          # real-time view, 'S', 'R', 'Z', etc.
+
+16)What is swap memory in Linux? How do you check if it’s being used and its size?
+Ans:Swap is disk space used as overflow when RAM is full. It prevents crashes but is slower. swapon -s or free -h shows swap usage.
+
+17)What’s the difference between kill, kill -9, and pkill in Linux?
+Ans:kill sends SIGTERM (graceful stop) by PID, kill -9 sends SIGKILL (force stop), and pkill kills by process name
+1️⃣ kill
+Sends a signal to a process to terminate it gracefully.
+Default signal is SIGTERM (15) → asks process to clean up and exit.
+Example:
+kill 1234   # send SIGTERM to process with PID 1234
+2️⃣ kill -9
+Sends SIGKILL (9) → forces process to terminate immediately.
+Process cannot catch or ignore this signal.
+Example:
+kill -9 1234
+3️⃣ pkill
+Kills a process by name instead of PID.
+Example:
+pkill firefox
+Kills all processes with the name firefox.
+Can also use signals:
+pkill -9 firefox
+
+18)How do you find large files taking up disk space in Linux?
+Ans:I’d use find or du to locate large files
+find / -type f -size +100M
+
+
+
