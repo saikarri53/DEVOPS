@@ -22,7 +22,8 @@ Ans: vim -r abc.txt
 6)Difference b/w soft and hard link?
 Ans:if you have a file you want,instead of cp command
 Hard link: Another name for the same file data (shares same inode). File survives even if original is deleted.
-Soft link: A shortcut that points to the file path. Breaks if the original file is deleted.(if main damages ref file gets damages).
+Soft (Symbolic) Link: A shortcut that points to the file’s path, not the data. 
+If the original file is deleted, the symlink becomes broken (dangling link)..
 # Original file
 echo "Hello" > file.txt
 
@@ -115,5 +116,37 @@ pkill -9 firefox
 Ans:I’d use find or du to locate large files
 find / -type f -size +100M
 
+19)How do you find the top 5 memory-consuming processes in Linux?
+Ans:You can use top or ps command. A common one-liner is:
+ps aux --sort=-%mem | head -n 6
+ps aux → shows all processes.
+--sort=-%mem → sorts by memory usage (descending).
+head -n 6 → shows top 5 + header row
+
+20)How do you check which ports are currently in use on a Linux system?
+Ans:Using netstat (older, common in interviews):
+netstat -tulnp
+-t → TCP
+-u → UDP
+-l → Listening ports
+-n → Show numbers, not names
+-p → Show process using the port
+
+Using ss (modern replacement for netstat):
+ss -tulnp
+
+Using lsof:
+lsof -i -P -n
+Shows which processes are using which ports.
+
+21)How do you find and kill a process running on a specific port in Linux?
+Ans:
+First, check who’s in the room → lsof/netstat:
+  ex:lsof -i :<port-number>
+or
+  netstat -tulnp | grep <port-number>
+
+Then, kick them out → kill -9:
+  ex:kill -9 <PID>
 
 
