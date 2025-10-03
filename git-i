@@ -1,0 +1,6 @@
+1)What’s the difference between git fetch and git pull?
+Ans:
+git fetch: Downloads commits, branches, and tags from the remote but does not merge them into your local branch. It just updates your remote tracking branches.
+git pull: Fetches + merges the remote changes into your current local branch in one step.
+
+
