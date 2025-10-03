@@ -3,4 +3,76 @@ Ans:
 git fetch: Downloads commits, branches, and tags from the remote but does not merge them into your local branch. It just updates your remote tracking branches.
 git pull: Fetches + merges the remote changes into your current local branch in one step.
 
+2)If you committed to the wrong branch, how do you move that commit to the correct branch?
+Ans:
 
+3)What’s the difference between git merge and git rebase?
+Ans:git merge: Combines branches by creating a new merge commit → preserves full history.
+              Merge = Marriage → you keep both family histories.
+git rebase: Moves commits on top of another branch → gives a clean linear history but rewrites commits.
+             Rebase = Rebirth → you’re reborn on top of someone else’s timeline.
+
+4)What is the difference between git reset, git revert, and git checkout?
+Ans:git reset → Rip out old pages
+You go back to an old day in your diary and tear out the newer pages.
+Depending on the mode:
+--soft: You keep the torn pages on your desk (staged, ready to re-add).
+--mixed: You throw them on the floor (unstaged but still visible).
+--hard: You burn them 🔥 (completely gone).
+👉 Dangerous, because history is altered.
+
+🔹 git revert → Add a new page saying “oops”
+Instead of tearing out pages, you write a new entry:
+“Remember that bad thing I wrote on Day 5? Ignore it.”
+History is never lost, just corrected.
+👉 Safe, because you don’t delete the past, you just cancel it out.
+
+🔹 git checkout → Flip between pages
+You’re just flipping back to see Day 2, or jumping forward to today’s page.
+Diary isn’t destroyed, you’re just viewing or switching branches (chapters).
+
+5)Explain the difference between fast-forward merge and three-way merge?
+Ans:Fast-Forward Merge:
+Happens when your branch has no new commits since you branched off.
+Git just moves the branch pointer forward.
+✅ No merge commit is created.
+Memory: Straight line → just advance, no history change.
+
+Three-Way Merge:
+Happens when both branches have new commits (diverged).
+Git creates a new merge commit using:
+Common ancestor
+Your branch
+Other branch
+✅ Combines histories.
+Memory: Two streams merge → Git acts as a referee.
+
+6)What’s the difference between origin and upstream in Git?
+Ans:
+origin:
+The default name Git gives to the remote repository you cloned from.
+Think: “Where my code originally came from.”
+Example: git push origin main → push your local main to your cloned repo.
+
+upstream:
+Usually points to the original repository you forked from, not your fork.
+Useful when contributing to open source:
+You fork someone else’s repo → your fork is origin.
+Original repo is upstream.
+You can pull updates from upstream to keep your fork updated
+
+7)What’s the difference between git tag and git branch?
+Ans:
+git branch:
+Creates a parallel line of development.
+Commits continue to grow from that branch.
+Think: “I want to continue working on a new feature without touching main.”
+
+git tag
+Marks a specific commit with a name (usually release version).
+Tags don’t move like branches do.
+Think: “I want to bookmark v1.0 of my project — it stays there forever.”
+
+💡 Memory Hack:
+Branch = a growing tree branch 🌿
+Tag = a sticky note 📌 on a branch
