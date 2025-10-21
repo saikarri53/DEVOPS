@@ -5,3 +5,35 @@ Project information: name, version, description, etc.
 Dependencies: libraries your project needs.
 Build configurations: plugins, goals, profiles.
 Repositories: where Maven should download dependencies from.
+
+Q2)Would you like me to explain how Maven actually automates the build process step by step (like what happens when you run mvn install)?
+Ans:Ingredients list (pom.xml) – Tells the chef: “I need these spices (dependencies), this main dish (project info), and these tools (plugins).”
+Cooking steps (mvn clean install etc.) – The chef follows the recipe
+Cleans old stuff
+Downloads all ingredients (dependencies)
+Builds the project (compiles code)
+Packages it (like making a jar/war file)
+Delivery – The project is ready to run or share.
+
+Q3)mvn clean vs mvn install ✅
+mvn clean → wipes old build files (like cleaning your messy desk before starting homework).
+mvn install → builds your project and puts the final jar/war into your local Maven repository (like saving your completed homework in your personal folder for later use).
+So your “clear data” part is correct for clean, but install is not installing Maven itself — it’s installing your project artifact locally.
+
+Q4)Where to specify JUnit?
+In the dependencies section of pom.xml.
+Think: you tell Maven, “Hey, I need this library,” and it goes and fetches it automatically.
+
+Q4)Dependency scope
+Scope tells Maven when to use a dependency.
+Example: test → only needed for testing, not for running the app.
+Visual trick: Imagine a library card — some books (dependencies) you can only read inside the library (test), some you can take home (compile/runtime).
+
+Q5)Multiple modules in one Maven project ✅
+True! Maven supports multi-module projects, where one parent pom.xml manages several child modules.
+Analogy: Think of a school principal (parent POM) managing multiple classrooms (modules).
+
+Q6)File format Maven produces
+For a Java web project: WAR file (.war)
+For a standard Java app: JAR file (.jar)
+Shortcut: “JAR = Java App, WAR = Web App Ready”
