@@ -1,0 +1,7 @@
+Q1:In Maven, what is the purpose of the pom.xml file, and what key elements does it contain?
+Ans:Maven is a build automation and project management tool.
+pom.xml (Project Object Model) is the core configuration file in Maven. It contains:
+Project information: name, version, description, etc.
+Dependencies: libraries your project needs.
+Build configurations: plugins, goals, profiles.
+Repositories: where Maven should download dependencies from.
