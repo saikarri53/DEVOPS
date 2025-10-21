@@ -8,3 +8,15 @@ There are two pipeline syntaxes:
 Declarative Pipeline: Simpler, structured, and easier to read (pipeline { stages { ... } })
 Scripted Pipeline: Based on Groovy, more flexible and used for complex logic.
 
+3)In Jenkins, how can you trigger a build automatically whenever code is pushed to GitHub?
+Ans: 
+trigger a Jenkins build automatically when code is pushed to GitHub:
+Integrate Git with Jenkins:
+Connect your GitHub repo in the Jenkins job configuration.
+Use Webhooks in GitHub:
+Go to your repo → Settings → Webhooks → Add webhook → give Jenkins URL (http://<jenkins-server>/github-webhook/)
+Now every push event notifies Jenkins automatically.
+Configure Jenkins Job:
+In the job, select “Build when a change is pushed to GitHub” or use a multibranch pipeline that listens to SCM changes.
+Result:
+Every time someone pushes code → Jenkins gets notified → automatically builds → generates WAR file or any build artifact.
