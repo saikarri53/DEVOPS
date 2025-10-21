@@ -76,3 +76,14 @@ Think: “I want to bookmark v1.0 of my project — it stays there forever.”
 💡 Memory Hack:
 Branch = a growing tree branch 🌿
 Tag = a sticky note 📌 on a branch
+
+
+8)What’s the difference between Subversion (SVN) and Git?
+Ans:SVN (Subversion) is centralized version control — there’s one main server; everyone commits to it. If that server dies → boom 💥 no version history locally.
+
+Git is distributed version control — every developer has a full copy of the repo, including history. You can commit, branch, and view logs offline.
+
+🧠 Memory hack:
+
+SVN = “One brain, many hands.”
+Git = “Every hand has its own brain.
