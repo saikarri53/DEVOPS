@@ -1,0 +1,10 @@
+1)In Jenkins, what’s the difference between a Freestyle Project and a Pipeline Project?
+Ans:Freestyle Project: A simple, GUI-based job where you manually configure each step (build, test, deploy). It’s limited and not reusable.
+Pipeline Project: Uses a Jenkinsfile (code) to define the CI/CD process — allows automation, version control, complex stages, and better scalability.
+
+2)What is the purpose of a Jenkinsfile and what are the two types of pipeline syntax available?
+Ans:A Jenkinsfile is a text file that defines the entire CI/CD pipeline as code. It contains stages like build, test, and deploy — making the process automated, repeatable, and version-controlled.
+There are two pipeline syntaxes:
+Declarative Pipeline: Simpler, structured, and easier to read (pipeline { stages { ... } })
+Scripted Pipeline: Based on Groovy, more flexible and used for complex logic.
+
