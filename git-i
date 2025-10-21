@@ -11,6 +11,9 @@ Ans:git merge: Combines branches by creating a new merge commit → preserves fu
               Merge = Marriage → you keep both family histories.
 git rebase: Moves commits on top of another branch → gives a clean linear history but rewrites commits.
              Rebase = Rebirth → you’re reborn on top of someone else’s timeline.
+Merge = “Join hands 🤝”
+Rebase = “Climb to the top 🧗‍♂️”
+
 
 4)What is the difference between git reset, git revert, and git checkout?
 Ans:git reset → Rip out old pages
