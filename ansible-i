@@ -1,0 +1,6 @@
+1)In Ansible, what’s the difference between a Playbook and a Role?
+Ans:
+->A Playbook in Ansible is a YAML file that defines a set of tasks to be executed on target machines.
+It’s like the script that tells Ansible what to do — install packages, copy files, restart services, etc.
+->A Role is a way to organize those Playbooks into reusable components.
+A Role has its own folder structure (tasks/, handlers/, vars/, templates/, etc.), so your code is cleaner and modular.
