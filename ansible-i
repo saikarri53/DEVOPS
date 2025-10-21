@@ -4,3 +4,7 @@ Ans:
 It’s like the script that tells Ansible what to do — install packages, copy files, restart services, etc.
 ->A Role is a way to organize those Playbooks into reusable components.
 A Role has its own folder structure (tasks/, handlers/, vars/, templates/, etc.), so your code is cleaner and modular.
+
+2)In Ansible, what’s the difference between the command module and the shell module?
+Ans:command module: Executes a command on the remote host without using a shell. It’s safer, doesn’t process shell features like |, >, <, &&.
+shell module: Executes a command through the shell, so you can use pipes, redirection, and shell operators.
