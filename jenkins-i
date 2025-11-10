@@ -20,3 +20,45 @@ Configure Jenkins Job:
 In the job, select “Build when a change is pushed to GitHub” or use a multibranch pipeline that listens to SCM changes.
 Result:
 Every time someone pushes code → Jenkins gets notified → automatically builds → generates WAR file or any build artifact.
+
+
+--------------------------------------------------------------------
+1️⃣ Using Jenkins “Manage Credentials” (Most Secure Way)
+
+This is the recommended method — Jenkins hides sensitive data safely.
+
+🧩 Steps:
+
+Go to Dashboard → Manage Jenkins → Credentials
+
+Choose (Global) or create a domain
+
+Click Add Credentials
+
+Choose the type:
+
+Username with password
+
+Secret text
+
+SSH key etc.
+
+Enter your username and password → Save
+
+pipeline {
+    agent any
+    environment {
+        CREDS = credentials('my-credentials-id')  // ID from Jenkins
+    }
+    stages {
+        stage('Show Example') {
+            steps {
+                sh '''
+                echo "Username: $CREDS_USR"
+                echo "Password: $CREDS_PSW"
+                '''
+            }
+        }
+    }
+}
+
