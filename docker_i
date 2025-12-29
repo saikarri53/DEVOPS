@@ -1,0 +1,8 @@
+Why would a company choose Docker containers over Virtual Machines in production?
+Ans:They wanted technical WHYs, like:
+No hypervisor
+Shared kernel
+Faster boot
+Better density
+Immutable infra
+
